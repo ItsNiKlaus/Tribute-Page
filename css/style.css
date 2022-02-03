@@ -1,0 +1,146 @@
+/* Universal Section */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Utility Classes */
+body{
+    font-family: 'Birthstone', cursive;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(221, 221, 221);
+    font-size: 26px;
+}
+
+p{
+    font-size: 1.7rem;
+}
+
+a{
+    text-decoration: none;
+    color: #bea493;
+}
+
+a:hover{
+  transition: 0.5s all;
+    color: #6b3218;
+}
+
+img{
+    width: 80%;
+    box-shadow: 9px 9px #404040;
+    transition: 1s all;
+}
+
+img:hover {
+    transition: 1s all;
+    transform: translateX(-10px) translateY(-20px);
+    box-shadow: 25px 25px #505050;
+  }
+
+#img-div{
+    margin-bottom: 50px;
+}
+
+/* Main Container */
+
+#main{
+    margin: auto;
+    max-width: 70%;
+}
+
+/* Header */
+
+header{
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+header h1{
+    font-size: 8rem;
+    text-shadow: 4px 4px #a9a9a9;
+}
+
+#mainheading:hover {
+    transform: translateX(-5px) translateY(-7px);
+    text-shadow: 10px 10px #a9a9a9;
+    transition: 1s all;
+  }
+  
+  #mainheading:not(hover) {
+    transition: 0.5s all;
+  }
+
+  #mainpara{
+      font-size: 2.2rem;
+  }
+
+  /* About Section */
+
+  #headline {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    text-shadow: 1px 1px #a9a9a9;
+    transform: translateX(0) translateY(0);
+    transition: 1s all ease-out;
+  }
+  
+  #headline:hover {
+    text-shadow: 1px 2px #a9a9a9;
+    transform: translateX(-1.5px) translateY(-2.5px);
+  }
+
+  .quote {
+    margin-top: 30px;
+    font-size: 1.8rem;
+    color: #6b3218;
+    text-shadow: 3px 3px #bbb2ad;
+    margin-bottom: 30px;
+  }
+  
+  /* Footer */
+
+footer {
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+  display: block;
+  padding: 5px 0;
+}
+
+/* Responsive Section */
+
+@media (max-width: 1000px) {
+  #main {
+    max-width: 92%;
+  }
+
+  h1 {
+    font-size: 5rem !important;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  #main {
+    max-width: 93%;
+  }
+
+  h1 {
+    font-size: 3rem !important;
+  }
+
+  #mainpara  {
+    font-size: 1.6rem;
+  }
+
+  img {
+    width: 100%;
+  }
+}
